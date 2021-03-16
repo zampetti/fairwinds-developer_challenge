@@ -9,7 +9,7 @@ to ask clarifying questions, ensure you understand the scope of the work,
 and propose a high-level solution to the problem.
 
 ## Process
-* Push your commits to this repository as you make progress.
+* Push your commits to a new git repository as you make progress.
 * Please don't take more than ~3 hours total over the next few days.
 * We have opened up a Slack channel for you to ask questions and get clarification - use it liberally!
 * Once you're done (we typically allot 5 business days), we'll meet to discuss your work.
