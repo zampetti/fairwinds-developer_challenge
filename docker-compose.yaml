@@ -1,0 +1,27 @@
+version: "3.9"
+   
+services:
+  db:
+    image: mysql:5.7
+    command: --init-file /data/init.sql
+    volumes:
+      - ./data/init.sql:/data/init.sql
+      - ./db:/var/lib/mysql
+    environment:
+      - MYSQL_HOST=HOST.DOCKER.INTERNAL
+      - MYSQL_PORT=3306  
+      - MYSQL_DATABASE=tic_tac_toe 
+      - MYSQL_USER=user 
+      - MYSQL_PASSWORD=user_password 
+      - MYSQL_ROOT_PASSWORD=root_password
+    ports:
+      - 3306:3306
+    container_name: my_db
+  app:
+    build:
+      context: ./api
+    container_name: my_api
+    ports:
+      - 3000:3000
+    depends_on:
+      - db

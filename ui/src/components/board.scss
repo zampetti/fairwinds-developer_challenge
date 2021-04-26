@@ -1,0 +1,11 @@
+.body {
+    border: 5px solid rgba(3, 84, 109, 0.5);
+    height: 500px;
+    width: 500px;
+    margin: auto;
+
+    .stroke {
+        stroke:rgba(52, 185, 226, 0.5);
+        stroke-width:10
+    }
+}
