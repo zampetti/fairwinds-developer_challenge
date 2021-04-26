@@ -1,3 +1,10 @@
+# Running my branch
+open two tabs in your terminal
+<ul>
+    <li>Run <code>docker-compose up</code></li>
+    <li><code>cd</code> into /ui and run <code>npm i</code> then <code>npm start</code>
+</ul>
+
 # developer-challenge
 
 ## Prompt
